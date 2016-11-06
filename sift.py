@@ -12,6 +12,7 @@ search_params = dict(checks=50)   # or pass empty dictionary
 flann = cv2.FlannBasedMatcher(index_params,search_params)
 matches = flann.knnMatch(des1,des2,k=2)
 
+#test
 print 'matches...',len(matches)
 # Apply ratio test
 good = []
